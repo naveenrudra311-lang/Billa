@@ -7,7 +7,6 @@ MAX_RESUMES = 100
 
 @router.post("/upload-resume")
 async def upload_resume(file: UploadFile = File(...), user_id: str = "default_user"):
-
     count = resume_collection.count_documents({"user": user_id})
 
     if count >= MAX_RESUMES:
