@@ -4,4 +4,3 @@ python-multipart
 pymongo
 requests
 speechrecognition
-pyaudio
