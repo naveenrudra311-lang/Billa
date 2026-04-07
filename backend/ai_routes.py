@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from backend.database import db
 import subprocess
+from .database import get_db, Resume, QALog
 
 router = APIRouter()
 

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File
-from database import resume_collection
+from .database import resume_collection
 
 router = APIRouter()
 

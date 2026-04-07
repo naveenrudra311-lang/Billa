@@ -1,6 +1,6 @@
-from fastapi import FastAPI
-from backend.resume_routes import router as resume_router
-from backend.ai_routes import router as ai_router
+from .database import init_db
+from .resume_routes import router as resume_router
+from .ai_routes import router as ai_routerr
 app = FastAPI()
 
 app.include_router(resume_router)
